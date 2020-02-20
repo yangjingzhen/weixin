@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			E:not(s) 表示E元素不被匹配
+			E~F表示E元素毗邻的F元素*/
+			h1{background: lightblue;}
+			h1:not(.test){color:green;}
+			span{width: 50px; height: 50px; background: #F08080; display: inline-block;}
+			input:checked~span{background: #FFA500;}
+		</style>
+	</head>
+	<body>
+		<h1>我是h1</h1>
+		<h1>我是h1</h1>
+		<h1 class="test">我是特殊的h1</h1>
+		<h1>我是h1</h1>
+		
+		<label><input type="radio" name="user"/><span></span></label>
+		<label><input type="radio" name="user"/><span></span></label>
+		<label><input type="radio" name="user"/><span></span></label>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>倒影</title>
+		<style type="text/css">
+			/*-webkit-box-reflect 倒影 right右侧  left左侧 below下边 above上边
+			 -webkit-linear-gradient 线性渐变
+			 */
+			body{background: #000;margin: 0; padding: 0;}
+			.img1{margin: 100px; -webkit-box-reflect: right;}
+			.img2{margin: 100px; -webkit-box-reflect: below;}
+			.img3{margin: 100px; -webkit-box-reflect: right 10px 
+			-webkit-linear-gradient(right,rgba(0,0,0,0.7)0, rgba(0,0,0,0) 70%);}
+		</style>
+	</head>
+	<body>
+		<img src="../img/1.jpg" alt="美女" class="img1"/><br/>
+		<img src="../img/2.jpg" alt="狗狗" class="img2"/><br/>
+		<img src="../img/1.png" alt="大美女" class="img3"/>
+	</body>
+</html>

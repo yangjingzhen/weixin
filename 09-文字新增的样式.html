@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			Direction  定义文字排列方式(全兼容)     Rtl 从右向左排列Ltr 从左向右排列
+			注意:要配合unicode-bidi 一块使用
+			
+			Text-overflow 
+			定义省略文本的处理方式clip  
+			无省略号Ellipsis 
+			省略号 (注意配合overflow:hidden和white-space:nowrap一块使用)
+			*/
+			.dir{width: 200px; height: 100px; border:1px solid blue; direction: rtl;
+			unicode-bidi: bidi-override;}
+			.slh{width: 300px; border:1px solid green; margin-top: 10px;
+			text-overflow: ellipsis; overflow: hidden; white-space: nowrap;
+			 }
+		</style>
+	</head>
+	<body>
+		<div class="dir">春天绿草青青</div>
+		<div class="slh">随即，网上出现“瘫痪铁路教学”，教人用铅笔、螺丝卡车门等，
+		8月14日就发生列车紧急门被人打开，乘客自行走下路轨的事故。
+		</div>
+	</body>
+</html>

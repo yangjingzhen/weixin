@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			E:target 表示当前的URL片段的元素类型，这个元素必须是E
+			E:disabled 表示不可点击的表单控件
+			E:enabled 表示可点击的表单控件
+			E:checked 表示已选中的checkbox或radio
+			E:first-line 表示E元素中的第一行
+			E:first-letter 表示E元素中的第一个字符
+			E::selection表示E元素在用户选中文字时
+			E:before 生成内容在E元素前
+			E:after 生成内容在E元素后
+			*/
+		   
+		   div{width:100px; height: 100px; background: blue; margin: 10px;}
+		   div:target{background: pink;}
+		   input:disabled{color:red;}
+		   input:enabled{color:green;}
+		   input:checked{color:green; width: 40px; height: 40px;}
+		   .wz{borde:1px solid blue; padding:10px; margin: 10px;}
+		   .wz:first-line{background: lightcoral;}
+		   .wz:first-letter{color:blue;}
+		   .wz::selection{color:blue; background: yellow;}
+		   /*content before或者after的内容*/
+		   .wz:before{content:"习大大新闻";font-size: 20px; font-weight: bold;}
+		   .wz:after{content: "小节：建设社会主义新世界"; color:orange;}
+		</style>
+	</head>
+	<body>
+		1.target<br/>
+		<a href="#div1">链接到div1</a>
+		<a href="#div2">链接到div2</a>
+		<a href="#div3">链接到div3</a>
+		<div id="div1">div1</div>
+		<div id="div2">div2</div>
+		<div id="div3">div3</div>
+		2.表单<br/>
+		<input type="text" value="请输入内容" />
+		<input type="text" value="请输入内容" disabled="disabled" />
+		<input type="text" value="请输入内容" readonly="readonly" />
+		
+		<input type="radio" name="sex"  />男 
+		<input type="radio" name="sex"  />女 
+		3.文章<br/>
+		<p class="wz">
+			<br/>
+			随即，网上出现“瘫痪铁路教学”，教人用铅笔、螺丝卡车门等，8月14日就发生列车紧急门被人打开，乘客自行走下路轨的事故。
+			
+			郭志强批评暴徒为瘫痪香港交通运作，罔顾乘客安全，意图破坏列车安全设备。19日激进示威者发起港铁员工“静坐不上车”、“请假不上班”的不合作运动，伪造“700港铁车长及员工实名联署”的现象，意图以罢工胁迫管理层不配合警方工作。
+			
+			14日，一列港岛线列车由柴湾站开出不久，因供电问题停下，车上实时广播通知乘客，但当车长正准备作最后测试以便恢复行车时，留意到驾驶室发出警示，有列车车尾的紧急出口门被人打开，7名乘客自行走下路轨离开。
+			
+			轻铁车长谭建钊形容事件极其严重，是6月以来首次有紧急门被打开，当时列车停在杏花邨站与柴湾站之间的路轨，乘客却自行打开了车尾紧急门走下路轨，万一后方列车刹车不及“会搞出人命”，谭建钊又指紧急门的开关掣在车长室，他质疑乘客为何能进入车长室并打开车尾的紧急出口门。
+		</p>
+		
+	</body>
+</html>

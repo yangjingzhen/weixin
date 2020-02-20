@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			E:first-child 表示E元素中的第一个子节点
+			E:last-child 表示E元素中的最后一个子节点
+			E:first-of-type 表示E父元素中的第一个子节点且节点类型是E的
+			E:last-of-type 表示E父元素中的最后一个子节点且节点类型是E的
+			E:only-child表示E元素中只有一个子节点。注意：子节点不包含文本节点
+			E:only-of-type 表示E的父元素中只有一个子节点，且这个唯一的子节点的类型必须是E。*/
+			p{width: 100%; height: 30px; border:1px solid red;}
+			/* p:first-child{color:blue;}
+			p:first-of-type{background: yellow;}
+			p:last-child{color:green;}
+			p:last-of-type{background: pink;} */
+			p:only-child{border:4px solid blue;}
+			/*child 只要是子节点都会计算在个数里*/
+			p:only-of-type{border:10px solid red;}
+			/*
+			of-type 只计算类型为 E 的元素个数
+			*/
+		</style>
+	</head>
+	<body>
+		<div>
+			
+			<div><span>1</span></div>
+			<p><span>1</span></p>
+		</div>
+		
+	</body>
+</html>
